@@ -32,7 +32,6 @@ a {
   background-image: url(https://prog-8.com/images/html/advanced/top.png);
   background-size: cover;
   color: white;
-  /* text-alignをcenterに指定してください */
   text-align: center;
 }
 
@@ -51,15 +50,12 @@ a {
   color: white;
   display: inline-block;
   opacity: 0.8;
-  /* border-radiusを4pxに指定してください */
   border-radius: 4px;
 }
 
-/* btnクラスにhoverしたときのCSSを指定してください */
 .btn:hover {
   opacity: 1;
 }
-
 
 .signup {
   background-color: #239b76;
@@ -81,3 +77,10 @@ a {
 .btn-wrapper p {
   margin: 10px 0;
 }
+
+/* faクラスのmargin-rightを5pxに指定してください */
+.fa {
+  margin-right: 5px;
+}
+
+

@@ -17,160 +17,256 @@
   margin: 0;
 }
 
-.main {
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
   background-image: url(https://prog-8.com/images/html/advanced/top.png);
   background-size: cover;
-}
-.main-conteiner {
-  padding: 180px 0 100px 0;
   color: white;
   text-align: center;
 }
-.main-conteiner h1,
-.main-conteiner div {
-  opacity: 0.7
-}
-.main-conteiner h1 {
+
+.top-wrapper h1 {
+  opacity: 0.7;
   font-size: 45px;
   letter-spacing: 5px;
 }
-.container-new {
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
   background-color: #239b76;
-  padding: 8px 24px;
-  border-radius: 4px;
-  color: white;
-  opacity: 0.8;
-  display: inline-block;
-  margin: 30px 0 15px 0;
 }
-.container-facebook {
+
+.facebook {
   background-color: #3b5998;
-  padding: 8px 24px;
-  border-radius: 4px;
-  color: white;
-  opacity: 0.8;
-  display: inline-block;
-  margin: 15px 10px 0 0;
+  margin-right: 10px;
 }
-.container-twitter {
+
+.twitter {
   background-color: #55acee;
+}
+
+.btn {
   padding: 8px 24px;
-  border-radius: 4px;
   color: white;
+  display: inline-block;
   opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
 }
-.fa {
-  padding-right: 5px;
-}
-.container-new:hover,
-.container-facebook:hover,
-.container-twitter:hover {
+
+.btn:hover {
   opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
 }
 
 header {
   height: 65px;
-  background-color: rgba(34, 49, 52, 0.9);
   width: 100%;
-  position: fixed;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
   top: 0;
   z-index: 10;
 }
-.header-main {
-  width: 1170px;
-  margin: 0 auto;
-}
-.header-logo {
+
+.logo {
   width: 124px;
-  padding: 20px ;
+  margin-top: 20px;
 }
-.header-login {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.3);
+
+.header-left {
+  float: left;
+}
+
+.header-right {
   float: right;
-  padding: 0 25px;
-  height: 65px;
-  line-height: 65px;
+  margin-right: -25px;
 }
-.header-login:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
   transition: all 0.5s;
 }
-.lesson {
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #f7f7f7;
-}
-.lesson1 {
-  width: 1170px;
-  height: 580px;
-  margin: 0 auto;
-}
-.lesson h2 {
-  font-weight: normal;
-  padding: 80px 0 50px 0;
   text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
   color: #5f5d60;
 }
-.lesson-img {
-  width: 25%;
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
   float: left;
-  text-align: center;
+  width: 25%;
+}
+
+.lesson-icon {
   position: relative;
 }
-.lesson-img p {
-  margin: 15px auto 0 auto;
-  font-size: 13px;
-  width: 80%;
-  color: #b3aeb5;
-}
-.lesson-topic {
+
+.lesson-icon p {
   position: absolute;
-  top: 90px;
+  top: 44%;
   width: 100%;
   color: white;
 }
-.message {
-  width: 1170px;
-  margin: 80px auto 80px auto;
-  text-align: center;
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
 }
-.message h2 {
-  color: #5f5d60;
+
+.heading h3 {
   font-weight: normal;
 }
-.message h3 {
-  color: #5f5d60;
-  margin-bottom: 50px;
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
 }
-.button {
-  color: white;
-  background-color: #5dca88;
-  border-radius: 4px;
+
+.message {
   padding: 15px 40px;
-  box-shadow: 0 7px #1a7940;
-  opacity: 0.8;
-}
-.button:hover {
-  opacity: 1;
+  background-color: #5dca88;
   cursor: pointer;
+  box-shadow: 0 7px #1a7940;
 }
-.button:active {
+
+.message:active {
   position: relative;
   top: 7px;
   box-shadow: none;
 }
-footer {
-  border-top: 1px solid #eee;
-  color: #b3aeb5;
-}
-.footer-text{
-  width: 1170px;
-  margin: 0 auto;
-  padding: 30px 0;
-  
-}
+
 footer img {
-  width: 124px;
+  width: 125px;
 }
+
 footer p {
+  color: #b3aeb5;
   font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .facebook {
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper {
+    text-align: left;
+  }
+
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right {
+    display: none;
+  }
+  
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon {
+    display: block;
+  }
+  
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
 }
